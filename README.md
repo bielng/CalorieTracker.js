@@ -1,4 +1,3 @@
-
 # Calorie Tracker
 
 A simple yet powerful **Calorie Tracker** application built with JavaScript to help users track their daily calorie consumption and manage their diet effectively.
@@ -29,7 +28,7 @@ Follow these steps to run the application locally:
 
 1. Clone the repository to your local machine:
    ```bash
-   git clone https://github.com/your-username/calorie-tracker.git
+   git clone https://github.com/bielng/calorie-tracker.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -52,20 +51,25 @@ Follow these steps to run the application locally:
 
 ## Troubleshooting
 
-### Common Error: 
+### Common Error:
+
 - **`Uncaught TypeError: Cannot read properties of null (reading 'calories')`**:
-   - Ensure that all entries added to the tracker include a valid `calories` property.
-   - Sanitize the input to prevent invalid or `null` values.
+  - Ensure that all entries added to the tracker include a valid `calories` property.
+  - Sanitize the input to prevent invalid or `null` values.
 
 ### Solution:
+
 - Filter entries before performing calculations:
-   ```javascript
-   const validEntries = this.entries.filter(entry => entry && entry.calories !== undefined);
-   ```
+  ```javascript
+  const validEntries = this.entries.filter(
+    (entry) => entry && entry.calories !== undefined
+  );
+  ```
 
 ## Contributing
 
 Contributions are welcome! To contribute:
+
 1. Fork the repository.
 2. Create a new branch for your feature:
    ```bash
